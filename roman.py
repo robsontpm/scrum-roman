@@ -23,15 +23,17 @@ def test_fib_up_to_10():
 	assert fib(10) == 89
 
 def test_code_decode_less_than_10():
-	for i in xrange(10)
-		assert i = decode(code(i))
+	for i in xrange(10):
+		assert i == decode(code(i))
 
 def test_code_decode_fib_times_10():
-	for i in xrange(10)
-		assert i = decode(code(10 * fib(i)))	
+	for i in xrange(10):
+		num = 10 * fib(i)
+		assert num == decode(code(num))	
 
 def test_code_decode_fib_times_100_plus_fib():
-	for i in xrange(3, 8)
-		for j in xrange(3, 8)
-			assert i = decode(code(100 * fib(i) + fib(j)))	
+	for i in xrange(3, 8):
+		for j in xrange(3, 8):
+			num = 100 * fib(i) + fib(j)
+			assert num == decode(code(num))	
 	

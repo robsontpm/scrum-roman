@@ -7,4 +7,4 @@ def decode(s):
 		raise ValueError
 
 def code(n):
-	return "{0}".format(num)
+	return "{0}".format(n)
